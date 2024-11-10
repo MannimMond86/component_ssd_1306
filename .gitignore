@@ -1,5 +1,17 @@
+# Build output directory
 build/
 cmake-build-debug/
+
+# SDK configuration files
 sdkconfig
 sdkconfig.old
+
+# VSCode settings (optional)
 .vscode/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.swp

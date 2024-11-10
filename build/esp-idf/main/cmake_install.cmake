@@ -1,4 +1,4 @@
-# Install script for directory: /home/ubuntu/CLionProjects/Display_Test/main
+# Install script for directory: /home/ubuntu/CLionProjects/template_project/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

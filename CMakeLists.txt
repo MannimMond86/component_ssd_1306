@@ -23,7 +23,12 @@ execute_process(
 # Check if git describe was successful
 if (NOT GIT_DESCRIBE_RESULT EQUAL 0)
     message(WARNING "git describe failed, setting PROJECT_VER to 0.0.0")
-    set(PROJECT_VER "0.0.0")
+    set(PROJECT_VER "99.99.98")
 endif()
 
+set(PROJECT_VER "${PROJECT_VER}")
+set(CMAKE_PROJECT_VERSION "${PROJECT_VER}")
+add_compile_definitions(PROJECT_VER="${PROJECT_VER}")
+
 project(main VERSION ${PROJECT_VER})
+# Pass PROJECT_VER to code as a macro definition

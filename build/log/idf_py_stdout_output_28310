@@ -1,6 +1,0 @@
-[0/1] Re-running CMake...
--- ccache will be used for faster recompilation
--- Building ESP-IDF components for target esp32
--- Configuring incomplete, errors occurred!
-FAILED: build.ninja 
-/usr/bin/cmake --regenerate-during-build -S/home/ubuntu/CLionProjects/Display_Test -B/home/ubuntu/CLionProjects/Display_Test/build

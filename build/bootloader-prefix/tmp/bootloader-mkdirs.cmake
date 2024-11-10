@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/home/ubuntu/esp/esp-idf/components/bootloader/subproject"
-  "/home/ubuntu/CLionProjects/Display_Test/build/bootloader"
-  "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix"
-  "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix/tmp"
-  "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix/src"
-  "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/ubuntu/CLionProjects/template_project/build/bootloader"
+  "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix"
+  "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix/tmp"
+  "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix/src"
+  "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/ubuntu/CLionProjects/Display_Test/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/ubuntu/CLionProjects/template_project/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
