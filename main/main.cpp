@@ -26,10 +26,16 @@
  *    - v0.1.0:
  *    - v1.0.0:
  ***********************************************************************************************/
+// TODO: implement the PROJECT_VER from build and git process
+#ifndef PROJECT_VER
+#define PROJECT_VER "99.99.99" // Definieren der Projektversion, falls nicht definiert
+#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
 
+#include "sdkconfig.h"
 #include "esp_log.h"
 #include "esp_system.h"
 #include "esp_task_wdt.h"
@@ -37,13 +43,13 @@
 #include "freertos/task.h"
 #include "driver/uart.h"
 #include "driver/gpio.h"
-//#include "esp_netif.h"
-//#include "esp_wifi.h"
+#include "esp_netif.h"
+#include "esp_wifi.h"
 #include "mqtt_client.h"
 
 #include "nvs_flash.h"
 
 extern "C" void app_main() {
- ESP_LOGI("App", "Project Version: %s", PROJECT_VER);
+    ESP_LOGI("App", "Project Version: %s", PROJECT_VER);
 
 }

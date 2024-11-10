@@ -1,0 +1,11 @@
+CMake Error at /home/ubuntu/esp/esp-idf/tools/cmake/kconfig.cmake:239 (add_custom_target):
+  add_custom_target cannot create target "menuconfig" because another target
+  with the same name already exists.  The existing target is a custom target
+  created in source directory "/home/ubuntu/CLionProjects/Display_Test".  See
+  documentation for policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /home/ubuntu/esp/esp-idf/tools/cmake/build.cmake:623 (__kconfig_generate_config)
+  main/CMakeLists.txt:31 (idf_build_process)
+
+
+ninja: error: rebuilding 'build.ninja': subcommand failed
