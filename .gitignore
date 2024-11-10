@@ -6,8 +6,9 @@ cmake-build-debug/
 sdkconfig
 sdkconfig.old
 
-# VSCode settings (optional)
+# IDE settings (optional)
 .vscode/
+.idea/
 
 # Log files
 *.log

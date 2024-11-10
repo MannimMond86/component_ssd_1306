@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "main",
-    "project_version":    "v1.1.1",
+    "project_version":    "v1.1.1-1-gd7c7506",
     "project_path":       "/home/ubuntu/CLionProjects/template_project",
     "idf_path":           "/home/ubuntu/esp/esp-idf",
     "build_dir":          "/home/ubuntu/CLionProjects/template_project/build",
