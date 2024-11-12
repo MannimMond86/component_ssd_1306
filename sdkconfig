@@ -374,10 +374,6 @@ CONFIG_PARTITION_TABLE_MD5=y
 # SSD1306 Display Configuration
 #
 CONFIG_DISPLAY_PROJECT_VERSION="1.0.0"
-
-#
-# SSD1306 Configuration
-#
 CONFIG_GPIO_RANGE_MAX=33
 CONFIG_I2C_INTERFACE=y
 # CONFIG_SPI_INTERFACE is not set
@@ -391,7 +387,6 @@ CONFIG_RESET_GPIO=15
 CONFIG_I2C_PORT_0=y
 # CONFIG_I2C_PORT_1 is not set
 # CONFIG_LEGACY_DRIVER is not set
-# end of SSD1306 Configuration
 # end of SSD1306 Display Configuration
 
 #
@@ -1739,9 +1734,9 @@ CONFIG_WIFI_PROV_STA_ALL_CHANNEL_SCAN=y
 # end of Wi-Fi Provisioning Manager
 
 #
-# SSD1306 Configuration
+# SSD1306 Display Configuration
 #
-# end of SSD1306 Configuration
+# end of SSD1306 Display Configuration
 # end of Component config
 
 # CONFIG_IDF_EXPERIMENTAL_FEATURES is not set

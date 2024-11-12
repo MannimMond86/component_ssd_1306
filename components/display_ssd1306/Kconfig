@@ -1,4 +1,10 @@
-menu "SSD1306 Configuration"
+menu "SSD1306 Display Configuration"
+
+    config DISPLAY_PROJECT_VERSION
+            string "Project Version"
+            default "1.0.0"
+            help
+                Specify the version of your project.
 
 	config GPIO_RANGE_MAX
 		int
