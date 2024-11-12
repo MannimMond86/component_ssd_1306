@@ -1,0 +1,15 @@
+version: "1.0.0"
+description: " Display "
+## IDF Component Manager Manifest File
+dependencies:
+  # Define a dependency from the registry
+  #example/cmp: "*"
+
+  ## Required IDF version
+  idf:
+    version: ">=4.1.0"
+
+  # Define a dependency from a Git repository
+  #test_cmp:
+  #  git:  "https://github.com/MannimMond86/test_cmp.git"
+  #  version: "*"

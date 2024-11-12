@@ -1,6 +1,8 @@
 # Build output directory
 build/
+backup/
 cmake-build-debug/
+managed_components/
 
 # SDK configuration files
 sdkconfig

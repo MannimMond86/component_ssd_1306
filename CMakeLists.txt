@@ -7,9 +7,17 @@ cmake_minimum_required(VERSION 3.16)
 # Verifying that IDF_PATH environment variable is set
 if (NOT DEFINED ENV{IDF_PATH})
     message(FATAL_ERROR "Environment variable IDF_PATH is not set")
-endif()
+endif ()
 
 include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+
+#include(FetchContent)
+#FetchContent_Declare(
+#        espidflib
+#        GIT_REPOSITORY https://github.com/UncleRus/esp-idf-lib.git
+#)
+#FetchContent_MakeAvailable(espidflib)
+#set(EXTRA_COMPONENT_DIRS ${espidflib_SOURCE_DIR}/display_api)
 
 # Attempt to determine PROJECT_VER from `git describe`
 execute_process(
@@ -24,7 +32,7 @@ execute_process(
 if (NOT GIT_DESCRIBE_RESULT EQUAL 0)
     message(WARNING "git describe failed, setting PROJECT_VER to 0.0.0")
     set(PROJECT_VER "99.99.98")
-endif()
+endif ()
 
 set(PROJECT_VER "${PROJECT_VER}")
 set(CMAKE_PROJECT_VERSION "${PROJECT_VER}")
@@ -32,3 +40,7 @@ add_compile_definitions(PROJECT_VER="${PROJECT_VER}")
 
 project(main VERSION ${PROJECT_VER})
 # Pass PROJECT_VER to code as a macro definition
+
+
+
+
